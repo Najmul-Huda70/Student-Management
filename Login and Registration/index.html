@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <section class="signup">
+      <div class="container">
+        <form>
+          <h1>Create an Account!</h1>
+          <div class="box">
+            <div class="main-info">
+              <div class="form-group">
+                <!-- Name -->
+                <label
+                  >Name<input
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="Enter your name"
+                    required
+                /></label>
+              </div>
+              <div class="form-group">
+                <!-- Date of Birth -->
+                <label
+                  >Date of Birth<input type="date" name="dob" id="dob" required
+                /></label>
+              </div>
+              <!-- Home District -->
+              <fieldset>
+                <legend>Home District</legend>
+                <input
+                  type="text"
+                  list="districts"
+                  id="home-district"
+                  name="home_district"
+                  placeholder="Search Your District"
+                  required
+                />
+
+                <datalist id="districts">
+                  <!-- Dhaka -->
+                  <option value="Dhaka"></option>
+                  <option value="Gazipur"></option>
+                  <option value="Narayanganj"></option>
+                  <option value="Tangail"></option>
+                  <option value="Kishoreganj"></option>
+                  <option value="Manikganj"></option>
+                  <option value="Munshiganj"></option>
+                  <option value="Narsingdi"></option>
+                  <option value="Gopalganj"></option>
+                  <option value="Faridpur"></option>
+                  <option value="Madaripur"></option>
+                  <option value="Rajbari"></option>
+                  <option value="Shariatpur"></option>
+                  <!-- Chattogram -->
+                  <option value="Chattogram"></option>
+                  <option value="Cumilla"></option>
+                  <option value="Cox's Bazar"></option>
+                  <option value="Noakhali"></option>
+                  <option value="Feni"></option>
+                  <option value="Lakshmipur"></option>
+                  <option value="Bandarban"></option>
+                  <option value="Khagrachhari"></option>
+                  <option value="Rangamati"></option>
+                  <option value="Brahmanbaria"></option>
+                  <option value="Chandpur"></option>
+                  <!-- Rajshahi -->
+                  <option value="Rajshahi"></option>
+                  <option value="Bogura"></option>
+                  <option value="Naogaon"></option>
+                  <option value="Natore"></option>
+                  <option value="Pabna"></option>
+                  <option value="Sirajganj"></option>
+                  <option value="Joypurhat"></option>
+                  <option value="Chapainawabganj"></option>
+                  <!-- Khulna -->
+                  <option value="Khulna"></option>
+                  <option value="Jashore"></option>
+                  <option value="Satkhira"></option>
+                  <option value="Bagerhat"></option>
+                  <option value="Kushtia"></option>
+                  <option value="Jhenaidah"></option>
+                  <option value="Magura"></option>
+                  <option value="Narail"></option>
+                  <option value="Chuadanga"></option>
+                  <option value="Meherpur"></option>
+                  <!-- Barishal -->
+                  <option value="Barishal"></option>
+                  <option value="Bhola"></option>
+                  <option value="Patuakhali"></option>
+                  <option value="Barguna"></option>
+                  <option value="Jhalokathi"></option>
+                  <option value="Pirojpur"></option>
+                  <!-- Sylhet -->
+                  <option value="Sylhet"></option>
+                  <option value="Moulvibazar"></option>
+                  <option value="Habiganj"></option>
+                  <option value="Sunamganj"></option>
+                  <!-- Rangpur -->
+                  <option value="Rangpur"></option>
+                  <option value="Dinajpur"></option>
+                  <option value="Thakurgaon"></option>
+                  <option value="Nilphamari"></option>
+                  <option value="Lalmonirhat"></option>
+                  <option value="Gaibandha"></option>
+                  <option value="Kurigram"></option>
+                  <option value="Panchagarh"></option>
+                  <!-- Mymensingh -->
+                  <option value="Mymensingh"></option>
+                  <option value="Netrokona"></option>
+                  <option value="Jamalpur"></option>
+                  <option value="Sherpur"></option>
+                </datalist>
+              </fieldset>
+
+              <!-- Blood Group -->
+              <fieldset>
+                <legend>Blood Group</legend>
+                <div class="radio-group">
+                  <label
+                    ><input type="radio" name="Blood" value="A+" />A+</label
+                  >
+                  <label
+                    ><input type="radio" name="Blood" value="B+" />B+</label
+                  >
+                  <label
+                    ><input type="radio" name="Blood" value="O+" />O+</label
+                  >
+                  <label
+                    ><input type="radio" name="Blood" value="AB+" />AB+</label
+                  >
+                  <label
+                    ><input type="radio" name="Blood" value="A-" />A-</label
+                  >
+                  <label
+                    ><input type="radio" name="Blood" value="B-" />B-</label
+                  >
+                  <label
+                    ><input type="radio" name="Blood" value="O-" />O-</label
+                  >
+                  <label
+                    ><input type="radio" name="Blood" value="AB-" />AB-</label
+                  >
+                </div>
+              </fieldset>
+
+              <!-- Gender  -->
+              <fieldset class="gender">
+                <legend>Gender</legend>
+                <label
+                  ><input type="radio" name="Gender" value="male" />Male</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="Gender"
+                    value="female"
+                  />Female</label
+                >
+              </fieldset>
+
+              <!-- Religion -->
+              <fieldset class="religion">
+                <legend>Religion</legend>
+                <label
+                  ><input type="radio" name="religion" value="islam" />
+                  Islam</label
+                >
+                <label
+                  ><input type="radio" name="religion" value="hindu" />
+                  Hindu</label
+                >
+                <label
+                  ><input type="radio" name="religion" value="buddhist" />
+                  Buddhist</label
+                >
+                <label
+                  ><input type="radio" name="religion" value="others" />
+                  Others</label
+                >
+              </fieldset>
+            </div>
+            <div class="academic-info">
+              <div class="form-group">
+                <label
+                  >Class Roll<input type="number" min="1" max="45"
+                /></label>
+              </div>
+              <div class="form-group">
+                <label
+                  >Registration No<input
+                    type="text"
+                    inputmode="numeric"
+                    pattern="[0-9]{9}"
+                    maxlength="9"
+                    placeholder="9 digit Registration No"
+                /></label>
+              </div>
+
+              <fieldset>
+                <legend>Department</legend>
+                <label><input type="radio" name="dept" value="cse" />CSE</label>
+                <label
+                  ><input
+                    type="radio"
+                    name="dept"
+                    value="eco"
+                  />Economics</label
+                >
+                <label
+                  ><input type="radio" name="dept" value="eng" />English</label
+                >
+                <label>
+                  <input type="radio" name="dept" value="ban" />Bangla</label
+                >
+              </fieldset>
+              <div class="form-group">
+                <label
+                  >Session
+                  <input
+                    type="text"
+                    inputmode="numeric"
+                    pattern="[0-9]{4}-[0-9]{2}"
+                    maxlength="7"
+                    placeholder="Example:2022-23"
+                /></label>
+              </div>
+
+              <div class="form-group">
+                <label
+                  >Current Year:
+                  <select name="Year">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                  </select></label
+                >
+              </div>
+              <div class="form-group">
+                <label
+                  >Current Semester:
+                  <select name="sem">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                  </select></label
+                >
+              </div>
+            </div>
+            <div class="contact-info">
+              <div class="form-group">
+                <label
+                  >Phone<input
+                    type="text"
+                    name="phone"
+                    inputmode="numeric"
+                    pattern="01[3-9][0-9]{8}"
+                    maxlength="11"
+                    placeholder="Enter your phone number"
+                    required
+                /></label>
+              </div>
+              <div class="form-group">
+                <label
+                  >Email
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Enter your email Account"
+                /></label>
+              </div>
+
+              <div class="form-group">
+                <label
+                  >Create Password
+                  <input
+                    type="password"
+                    name="pass"
+                    placeholder="Enter your password"
+                /></label>
+              </div>
+
+              <div class="form-group">
+                <label
+                  >Confirm Password
+                  <input
+                    type="password"
+                    name="conf-pass"
+                    placeholder="Enter your confirm password"
+                /></label>
+              </div>
+            </div>
+          </div>
+          <button type="submit">Register Account</button>
+          <div class="link">
+            <a href="#">Forgot Password?</a>
+            <a href="#">I have an account?login!</a>
+          </div>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
