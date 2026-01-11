@@ -1,0 +1,113 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  background-color: white;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+form {
+  width: 80%;
+  margin-top: 50px;
+  background-color: rgb(207, 208, 209);
+  border-radius: 8px;
+  padding: 50px;
+  /* box-shadow: x-offset y-offset blur-radius color; */
+  box-shadow: 0px 10px 25px rgb(0, 0, 0, 0.2);
+  text-align: center;
+}
+form .heading {
+  margin-bottom: 40px;
+  color: rgb(41, 39, 62);
+}
+form .box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+form .box input {
+  border-radius: 8px;
+  width: 100%;
+  height: 40px;
+  padding: 5px;
+}
+input::placeholder {
+  color: #093f3f;
+}
+
+form .button-cls {
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+form .btn {
+  min-width: 25%;
+  height: 40px;
+  font-size: 25px;
+  font-weight: bold;
+  border-radius: 8px;
+  border: none;
+  padding: 8px;
+  /* box-shadow: 0px 10px 25px rgb(0, 0, 0, 0, 0.1); */
+  background-color: rgb(69, 69, 168);
+  color: rgb(255, 255, 255);
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+.link p {
+  padding-bottom: 8px;
+}
+@media screen and (max-width: 576px) {
+  form .box {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  form {
+    padding: 15px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 868px) {
+  form .heading {
+    font-size: 15px;
+    font-weight: bold;
+  }
+  form .box {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  form {
+    padding: 20px;
+    font-size: 50px;
+  }
+  .link {
+    font-size: 15px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  form .box {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  form {
+    padding: 120px;
+  }
+  form .box {
+    gap: 80px;
+  }
+  form .box input {
+    height: 80px;
+    padding: 30px;
+  }
+  form .heading {
+    margin-bottom: 70px;
+  }
+  form .button-cls {
+    margin-top: 50px;
+    margin-bottom: 25px;
+  }
+}

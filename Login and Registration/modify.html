@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration</title>
+    <link rel="stylesheet" href="./styles/modify.css" />
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <form>
+          <div class="heading"><h1>Create an account!</h1></div>
+          <div class="box">
+            <label
+              ><input type="text" name="name" placeholder="Name" required
+            /></label>
+            <label
+              ><input
+                type="date"
+                name="dob"
+                placeholder="Date of Birth"
+                required
+            /></label>
+            <label
+              ><input
+                type="text"
+                list="districts"
+                name="home_district"
+                placeholder="Home District"
+                required
+              />
+              <datalist id="districts">
+                <!-- Dhaka -->
+                <option value="Dhaka"></option>
+                <option value="Gazipur"></option>
+                <option value="Narayanganj"></option>
+                <option value="Tangail"></option>
+                <option value="Kishoreganj"></option>
+                <option value="Manikganj"></option>
+                <option value="Munshiganj"></option>
+                <option value="Narsingdi"></option>
+                <option value="Gopalganj"></option>
+                <option value="Faridpur"></option>
+                <option value="Madaripur"></option>
+                <option value="Rajbari"></option>
+                <option value="Shariatpur"></option>
+                <!-- Chattogram -->
+                <option value="Chattogram"></option>
+                <option value="Cumilla"></option>
+                <option value="Cox's Bazar"></option>
+                <option value="Noakhali"></option>
+                <option value="Feni"></option>
+                <option value="Lakshmipur"></option>
+                <option value="Bandarban"></option>
+                <option value="Khagrachhari"></option>
+                <option value="Rangamati"></option>
+                <option value="Brahmanbaria"></option>
+                <option value="Chandpur"></option>
+                <!-- Rajshahi -->
+                <option value="Rajshahi"></option>
+                <option value="Bogura"></option>
+                <option value="Naogaon"></option>
+                <option value="Natore"></option>
+                <option value="Pabna"></option>
+                <option value="Sirajganj"></option>
+                <option value="Joypurhat"></option>
+                <option value="Chapainawabganj"></option>
+                <!-- Khulna -->
+                <option value="Khulna"></option>
+                <option value="Jashore"></option>
+                <option value="Satkhira"></option>
+                <option value="Bagerhat"></option>
+                <option value="Kushtia"></option>
+                <option value="Jhenaidah"></option>
+                <option value="Magura"></option>
+                <option value="Narail"></option>
+                <option value="Chuadanga"></option>
+                <option value="Meherpur"></option>
+                <!-- Barishal -->
+                <option value="Barishal"></option>
+                <option value="Bhola"></option>
+                <option value="Patuakhali"></option>
+                <option value="Barguna"></option>
+                <option value="Jhalokathi"></option>
+                <option value="Pirojpur"></option>
+                <!-- Sylhet -->
+                <option value="Sylhet"></option>
+                <option value="Moulvibazar"></option>
+                <option value="Habiganj"></option>
+                <option value="Sunamganj"></option>
+                <!-- Rangpur -->
+                <option value="Rangpur"></option>
+                <option value="Dinajpur"></option>
+                <option value="Thakurgaon"></option>
+                <option value="Nilphamari"></option>
+                <option value="Lalmonirhat"></option>
+                <option value="Gaibandha"></option>
+                <option value="Kurigram"></option>
+                <option value="Panchagarh"></option>
+                <!-- Mymensingh -->
+                <option value="Mymensingh"></option>
+                <option value="Netrokona"></option>
+                <option value="Jamalpur"></option>
+                <option value="Sherpur"></option>
+              </datalist>
+            </label>
+            <label
+              ><input
+                type="number"
+                name="roll"
+                min="1"
+                max="45"
+                placeholder="Class Roll"
+                required
+            /></label>
+            <label
+              ><input
+                type="text"
+                name="Registration"
+                placeholder="Registration No: XXXXXXXXX"
+                required /></label
+            ><label
+              ><input
+                type="text"
+                name="Session"
+                list="session"
+                placeholder="Session"
+                required
+              />
+              <datalist id="session">
+                <option value="2019-20"></option>
+                <option value="2020-21"></option>
+                <option value="2021-22"></option>
+                <option value="2022-23"></option>
+                <option value="2023-24"></option>
+                <option value="2024-25"></option>
+                <option value="2025-26"></option>
+              </datalist>
+            </label>
+            <label
+              ><input
+                class="ys"
+                type="text"
+                list="ys"
+                name="year-semester"
+                placeholder="Current Year & Semester"
+                required
+              />
+              <datalist id="ys">
+                <option value="1st year & 1st semester"></option>
+                <option value="1st year & 2nd semester"></option>
+                <option value="2nd year & 1st semester"></option>
+                <option value="2nd year & 2nd semester"></option>
+                <option value="3rd year & 1st semester"></option>
+                <option value="3rd year & 2nd semester"></option>
+                <option value="4th year & 1st semester"></option>
+                <option value="4th year & 2nd semester"></option>
+              </datalist>
+            </label>
+            <label
+              ><input
+                type="text"
+                name="blood-group"
+                placeholder="Blood Group"
+                list="blood"
+                required
+              />
+              <datalist id="blood">
+                <option value="A+"></option>
+                <option value="B+"></option>
+                <option value="AB+"></option>
+                <option value="O+"></option>
+                <option value="A-"></option>
+                <option value="B-"></option>
+                <option value="AB-"></option>
+                <option value="O-"></option>
+              </datalist>
+            </label>
+            <label><input type="text" placeholder="Phone" required /></label
+            ><label><input type="email" placeholder="Email" required /></label
+            ><label
+              ><input type="password" placeholder="Password" required /></label
+            ><label
+              ><input type="password" placeholder="Confirm Password"
+            /></label>
+          </div>
+          <div class="button-cls">
+            <button class="btn" type="submit">Create Account</button>
+          </div>
+          <div class="link">
+            <p><a href="#">Forgot Password?</a></p>
+            <p><a href="#">I have an account?Login!</a></p>
+          </div>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
+
+<!-- <div class="group-2">
+  <label for="year">Current Year</label>
+  <select name="year" id="year">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+  </select>
+</div>
+<div class="group-2">
+  <label for="semester">Current Semester</label>
+  <select name="semester" id="semester">
+    <option value="1">1</option>
+    <option value="2">2</option>
+  </select>
+</div> -->
+
+<!-- <fieldset>
+  <legend>Gender</legend>
+  <label><input type="radio" name="Gender" value="male" />Male</label>
+  <label><input type="radio" name="Gender" value="female" />Female</label>
+</fieldset>
+<fieldset>
+  <legend>Religion</legend>
+  <label><input type="radio" name="" />Islam</label>
+  <label><input type="radio" name="" />Hindu</label>
+  <label><input type="radio" name="" />Christian</label>
+  <label><input type="radio" name="" />Budhist</label>
+  <label><input type="radio" name="" />Others</label>
+</fieldset> -->
