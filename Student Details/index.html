@@ -1,0 +1,661 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/student_details.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Student Details</title>
+  </head>
+  <body class="bg-[#ecf0f1]">
+    <div class="container flex flex-col justify-center items-center">
+      <div class="hero text-center">
+        <h1>Student Details</h1>
+        <p>
+          Meet the students of 4th Batch, Department of CSE at Netrokona
+          University.
+        </p>
+      </div>
+      <div class="student-filters grid rounded-lg">
+        <div class="student-search">
+          <input
+            class="rounded-full"
+            type="text"
+            id="studentSearch"
+            placeholder="Search by name, ID, or interest..."
+          />
+        </div>
+        <div class="sort">
+          <label class="text-bold" for="sortBy">Sort by:</label>
+          <select class="rounded-lg" id="sortBy">
+            <option value="name">Name</option>
+            <option value="id">ID</option>
+          </select>
+        </div>
+        <div class="filter">
+          <label class="text-bold" for="filterInterest"
+            >Filter by interest:</label
+          >
+          <select class="rounded-lg" id="filterInterest">
+            <option value="all">All interests</option>
+            <option value="web">Web Development</option>
+            <option value="ai">AI/ML</option>
+            <option value="cyber">Cybersecurity</option>
+            <option value="mobile">Mobile Development</option>
+            <option value="database">Database</option>
+            <option value="robotics">Robotics/IoT</option>
+          </select>
+        </div>
+      </div>
+      <div class="student_details grid">
+        <div class="card bg-green-500 rounded-lg">
+          <div class="images">
+            <img
+              class="rounded-t-lg w-full h-[250px]"
+              src="./image/01.png"
+              alt="Suham mia"
+            />
+          </div>
+          <div class="text-link">
+            <div class="text">
+              <h3>Suham mia</h3>
+              <p>
+                <span>ID: 202204001</span>
+                <br />
+                Interests: Database, BCS
+              </p>
+            </div>
+            <div class="link">
+              <a href=""><i class="fa-solid fa-envelope"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+              <a href=""><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-green-500 rounded-lg">
+          <div class="images">
+            <img
+              class="rounded-t-lg w-full h-[250px]"
+              src="./image/02.png"
+              alt="Fiaze Ahmed"
+            />
+          </div>
+          <div class="text-link">
+            <div class="text">
+              <h3>Fiaze Ahmed</h3>
+              <p>
+                <span>ID: 202204002</span>
+                <br />
+                Interests: Web Development , Database
+              </p>
+            </div>
+            <div class="link">
+              <a href=""><i class="fa-solid fa-envelope"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+              <a href=""><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-green-500 rounded-lg">
+          <div class="images">
+            <img
+              class="rounded-t-lg w-full h-[250px]"
+              src="./image/08.png"
+              alt="Emam Hasan"
+            />
+          </div>
+          <div class="text-link">
+            <div class="text">
+              <h3>Emam Hasan</h3>
+              <p>
+                <span>ID: 202204008</span>
+                <br />
+                Interests: Web Development,Robotics/IoT
+              </p>
+            </div>
+            <div class="link">
+              <a href=""><i class="fa-solid fa-envelope"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+              <a href=""><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-green-500 rounded-lg">
+          <div class="images">
+            <img
+              class="rounded-t-lg w-full h-[250px]"
+              src="./image/11.png"
+              alt="Zuel Rana"
+            />
+          </div>
+          <div class="text-link">
+            <div class="text">
+              <h3>Zuel Rana</h3>
+              <p>
+                <span>ID: 202204011</span>
+                <br />
+                Interests: Cybersecurity,Robotics/IoT
+              </p>
+            </div>
+            <div class="link">
+              <a href=""><i class="fa-solid fa-envelope"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+              <a href=""><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-green-500 rounded-lg">
+          <div class="images">
+            <img
+              class="rounded-t-lg w-full h-[250px]"
+              src="./image/12.png"
+              alt="Najmul Huda"
+            />
+          </div>
+          <div class="text-link">
+            <div class="text">
+              <h3>Najmul Huda</h3>
+              <p>
+                <span>ID: 202204012</span>
+                <br />
+                Interests: Web Development,UI/UX
+              </p>
+            </div>
+            <div class="link">
+              <a href=""><i class="fa-solid fa-envelope"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+              <a href=""><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-green-500 rounded-lg">
+          <div class="images">
+            <img
+              class="rounded-t-lg w-full h-[250px]"
+              src="./image/13.png"
+              alt="Kanok Faisal Hoque"
+            />
+          </div>
+          <div class="text-link">
+            <div class="text">
+              <h3>Kanok Faisal Hoque</h3>
+              <p>
+                <span>ID: 202204013</span>
+                <br />
+                Interests: Web Development,Cybersecurity
+              </p>
+            </div>
+            <div class="link">
+              <a href=""><i class="fa-solid fa-envelope"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+              <a href=""><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-green-500 rounded-lg">
+          <div class="images">
+            <img
+              class="rounded-t-lg w-full h-[250px]"
+              src="./image/16.png"
+              alt="Naimul Islam Maruf"
+            />
+          </div>
+          <div class="text-link">
+            <div class="text">
+              <h3>Naimul Islam Maruf</h3>
+              <p>
+                <span>ID: 202204016</span>
+                <br />
+                Interests: Mobile App Development, UI/UX
+              </p>
+            </div>
+            <div class="link">
+              <a href=""><i class="fa-solid fa-envelope"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+              <a href=""><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-green-500 rounded-lg">
+          <div class="images">
+            <img
+              class="rounded-t-lg w-full h-[250px]"
+              src="./image/18.png"
+              alt="Amith Barua"
+            />
+          </div>
+          <div class="text-link">
+            <div class="text">
+              <h3>Amith Barua</h3>
+              <p>
+                <span>ID: 202204018</span>
+                <br />
+                Interests: Database, Mobile App Development
+              </p>
+            </div>
+            <div class="link">
+              <a href=""><i class="fa-solid fa-envelope"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+              <a href=""><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-green-500 rounded-lg">
+          <div class="images">
+            <img
+              class="rounded-t-lg w-full h-[250px]"
+              src="./image/19.png"
+              alt="Akikul Hoque Sajib"
+            />
+          </div>
+          <div class="text-link">
+            <div class="text">
+              <h3>Akikul Hoque Sajib</h3>
+              <p>
+                <span>ID: 202204019</span>
+                <br />
+                Interests: Mobile App Development, UI/UX
+              </p>
+            </div>
+            <div class="link">
+              <a href=""><i class="fa-solid fa-envelope"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+              <a href=""><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-green-500 rounded-lg">
+          <div class="images">
+            <img
+              class="rounded-t-lg w-full h-[250px]"
+              src="./image/23.png"
+              alt="Md. Samiul Islam Soumik"
+            />
+          </div>
+          <div class="text-link">
+            <div class="text">
+              <h3>Md. Samiul Islam Soumik</h3>
+              <p>
+                <span>ID: 202204023</span>
+                <br />
+                Interests: Database, Mobile App Development, UI/UX
+              </p>
+            </div>
+            <div class="link">
+              <a href=""><i class="fa-solid fa-envelope"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+              <a href=""><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-green-500 rounded-lg">
+          <div class="images">
+            <img
+              class="rounded-t-lg w-full h-[250px]"
+              src="./image/24.jpeg"
+              alt="Samiul Islam Pias"
+            />
+          </div>
+          <div class="text-link">
+            <div class="text">
+              <h3>Samiul Islam Pias</h3>
+              <p>
+                <span>ID: 202204024</span>
+                <br />
+                Interests: Cybersecurity, Mobile App Development, UI/UX
+              </p>
+            </div>
+            <div class="link">
+              <a href=""><i class="fa-solid fa-envelope"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+              <a href=""><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-green-500 rounded-lg">
+          <div class="images">
+            <img
+              class="rounded-t-lg w-full h-[250px]"
+              src="./image/26.png"
+              alt="Abdul Ahad"
+            />
+          </div>
+          <div class="text-link">
+            <div class="text">
+              <h3>Abdul Ahad</h3>
+              <p>
+                <span>ID: 202204026</span>
+                <br />
+                Interests: AI/ML ,Cybersecurity
+              </p>
+            </div>
+            <div class="link">
+              <a href=""><i class="fa-solid fa-envelope"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+              <a href=""><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-green-500 rounded-lg">
+          <div class="images">
+            <img
+              class="rounded-t-lg w-full h-[250px]"
+              src="./image/01.png"
+              alt="Suham mia"
+            />
+          </div>
+          <div class="text-link">
+            <div class="text">
+              <h3>Suham mia</h3>
+              <p>
+                <span>ID: 202204001</span>
+                <br />
+                Interests: Database, BCS
+              </p>
+            </div>
+            <div class="link">
+              <a href=""><i class="fa-solid fa-envelope"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+              <a href=""><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-green-500 rounded-lg">
+          <div class="images">
+            <img
+              class="rounded-t-lg w-full h-[250px]"
+              src="./image/02.png"
+              alt="Fiaze Ahmed"
+            />
+          </div>
+          <div class="text-link">
+            <div class="text">
+              <h3>Fiaze Ahmed</h3>
+              <p>
+                <span>ID: 202204002</span>
+                <br />
+                Interests: Web Development , Database
+              </p>
+            </div>
+            <div class="link">
+              <a href=""><i class="fa-solid fa-envelope"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+              <a href=""><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-green-500 rounded-lg">
+          <div class="images">
+            <img
+              class="rounded-t-lg w-full h-[250px]"
+              src="./image/08.png"
+              alt="Emam Hasan"
+            />
+          </div>
+          <div class="text-link">
+            <div class="text">
+              <h3>Emam Hasan</h3>
+              <p>
+                <span>ID: 202204008</span>
+                <br />
+                Interests: Web Development,Robotics/IoT
+              </p>
+            </div>
+            <div class="link">
+              <a href=""><i class="fa-solid fa-envelope"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+              <a href=""><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-green-500 rounded-lg">
+          <div class="images">
+            <img
+              class="rounded-t-lg w-full h-[250px]"
+              src="./image/11.png"
+              alt="Zuel Rana"
+            />
+          </div>
+          <div class="text-link">
+            <div class="text">
+              <h3>Zuel Rana</h3>
+              <p>
+                <span>ID: 202204011</span>
+                <br />
+                Interests: Cybersecurity,Robotics/IoT
+              </p>
+            </div>
+            <div class="link">
+              <a href=""><i class="fa-solid fa-envelope"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+              <a href=""><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-green-500 rounded-lg">
+          <div class="images">
+            <img
+              class="rounded-t-lg w-full h-[250px]"
+              src="./image/12.png"
+              alt="Najmul Huda"
+            />
+          </div>
+          <div class="text-link">
+            <div class="text">
+              <h3>Najmul Huda</h3>
+              <p>
+                <span>ID: 202204012</span>
+                <br />
+                Interests: Web Development,UI/UX
+              </p>
+            </div>
+            <div class="link">
+              <a href=""><i class="fa-solid fa-envelope"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+              <a href=""><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-green-500 rounded-lg">
+          <div class="images">
+            <img
+              class="rounded-t-lg w-full h-[250px]"
+              src="./image/13.png"
+              alt="Kanok Faisal Hoque"
+            />
+          </div>
+          <div class="text-link">
+            <div class="text">
+              <h3>Kanok Faisal Hoque</h3>
+              <p>
+                <span>ID: 202204013</span>
+                <br />
+                Interests: Web Development,Cybersecurity
+              </p>
+            </div>
+            <div class="link">
+              <a href=""><i class="fa-solid fa-envelope"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+              <a href=""><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-green-500 rounded-lg">
+          <div class="images">
+            <img
+              class="rounded-t-lg w-full h-[250px]"
+              src="./image/16.png"
+              alt="Naimul Islam Maruf"
+            />
+          </div>
+          <div class="text-link">
+            <div class="text">
+              <h3>Naimul Islam Maruf</h3>
+              <p>
+                <span>ID: 202204016</span>
+                <br />
+                Interests: Mobile App Development, UI/UX
+              </p>
+            </div>
+            <div class="link">
+              <a href=""><i class="fa-solid fa-envelope"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+              <a href=""><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-green-500 rounded-lg">
+          <div class="images">
+            <img
+              class="rounded-t-lg w-full h-[250px]"
+              src="./image/18.png"
+              alt="Amith Barua"
+            />
+          </div>
+          <div class="text-link">
+            <div class="text">
+              <h3>Amith Barua</h3>
+              <p>
+                <span>ID: 202204018</span>
+                <br />
+                Interests: Database, Mobile App Development
+              </p>
+            </div>
+            <div class="link">
+              <a href=""><i class="fa-solid fa-envelope"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+              <a href=""><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-green-500 rounded-lg">
+          <div class="images">
+            <img
+              class="rounded-t-lg w-full h-[250px]"
+              src="./image/19.png"
+              alt="Akikul Hoque Sajib"
+            />
+          </div>
+          <div class="text-link">
+            <div class="text">
+              <h3>Akikul Hoque Sajib</h3>
+              <p>
+                <span>ID: 202204019</span>
+                <br />
+                Interests: Mobile App Development, UI/UX
+              </p>
+            </div>
+            <div class="link">
+              <a href=""><i class="fa-solid fa-envelope"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+              <a href=""><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-green-500 rounded-lg">
+          <div class="images">
+            <img
+              class="rounded-t-lg w-full h-[250px]"
+              src="./image/23.png"
+              alt="Md. Samiul Islam Soumik"
+            />
+          </div>
+          <div class="text-link">
+            <div class="text">
+              <h3>Md. Samiul Islam Soumik</h3>
+              <p>
+                <span>ID: 202204023</span>
+                <br />
+                Interests: Database, Mobile App Development, UI/UX
+              </p>
+            </div>
+            <div class="link">
+              <a href=""><i class="fa-solid fa-envelope"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+              <a href=""><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-green-500 rounded-lg">
+          <div class="images">
+            <img
+              class="rounded-t-lg w-full h-[250px]"
+              src="./image/24.jpeg"
+              alt="Samiul Islam Pias"
+            />
+          </div>
+          <div class="text-link">
+            <div class="text">
+              <h3>Samiul Islam Pias</h3>
+              <p>
+                <span>ID: 202204024</span>
+                <br />
+                Interests: Cybersecurity, Mobile App Development, UI/UX
+              </p>
+            </div>
+            <div class="link">
+              <a href=""><i class="fa-solid fa-envelope"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+              <a href=""><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-green-500 rounded-lg">
+          <div class="images">
+            <img
+              class="rounded-t-lg w-full h-[250px]"
+              src="./image/26.png"
+              alt="Abdul Ahad"
+            />
+          </div>
+          <div class="text-link">
+            <div class="text">
+              <h3>Abdul Ahad</h3>
+              <p>
+                <span>ID: 202204026</span>
+                <br />
+                Interests: AI/ML ,Cybersecurity
+              </p>
+            </div>
+            <div class="link">
+              <a href=""><i class="fa-solid fa-envelope"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+              <a href=""><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-green-500 rounded-lg">
+          <div class="images">
+            <img
+              class="rounded-t-lg w-full h-[250px]"
+              src="./image/26.png"
+              alt="Abdul Ahad"
+            />
+          </div>
+          <div class="text-link">
+            <div class="text">
+              <h3>Abdul Ahad</h3>
+              <p>
+                <span>ID: 202204026</span>
+                <br />
+                Interests: AI/ML ,Cybersecurity
+              </p>
+            </div>
+            <div class="link">
+              <a href=""><i class="fa-solid fa-envelope"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+              <a href=""><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

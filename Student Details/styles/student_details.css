@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 95%;
+  margin: 1.5rem auto;
+  padding: 0 1rem;
+  background-color: white;
+  border-radius: 1rem;
+  /* Horizontal offset Vertical offset Blur radius Color 255,255,255 = White 0.4 = 40% transparency */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.student-filters {
+  width: 95%;
+  gap: 1rem;
+  margin: 2rem;
+  padding: 1rem;
+  background-color: #f5f7fa;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+}
+.student-search input {
+  min-width: 350px;
+  min-height: 20px;
+  padding: 0.75rem;
+  background-color: white;
+}
+.text-bold {
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+.sort select {
+  background-color: white;
+  padding: 0.75rem;
+  min-width: 30px;
+  min-height: 20px;
+}
+.filter select {
+  background-color: white;
+  padding: 0.75rem;
+  min-width: 30px;
+  min-height: 20px;
+}
+h1 {
+  color: blue;
+  font-size: 4rem;
+  font-weight: bold;
+}
+p {
+  color: rgb(29, 28, 28);
+  font-size: 1rem;
+}
+.student_details {
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+  padding-bottom: 1rem;
+}
+.text-link {
+  padding: 1rem;
+}
+.text h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: blue;
+}
+.text p span {
+  color: red;
+}
+.link {
+  margin-top: 1rem;
+}
+.card {
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 3rem;
+  }
+  .student-filters {
+    margin: 0.75rem;
+    padding: 0.5rem;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .student_details {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  h1 {
+    font-size: 4rem;
+  }
+  .student-filters {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .student_details {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  h1 {
+    font-size: 4rem;
+  }
+  .student_details {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+  h1 {
+    font-size: 4rem;
+  }
+  .student_details {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (min-width: 1201px) {
+}
