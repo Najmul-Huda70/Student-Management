@@ -3,9 +3,60 @@
   padding: 0;
   box-sizing: border-box;
 }
+.welcome,
+.about,
+.Contact {
+  margin: 2rem auto;
+  padding: 2.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.welcome h1 {
+  padding-bottom: 1rem;
+}
+.about-title,
+.Contact-title {
+  margin-bottom: 1.125rem;
+}
+.about-grid {
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 2;
+}
+
+.about-grid .img {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.about .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.Contact-flex .card {
+  padding: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.Contact-flex .card i,
+.Contact-flex .card h2 {
+  color: #1055c9;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.location {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+footer {
+  padding: 1rem;
+  text-align: center;
+}
 @media screen and (max-width: 480px) {
-  .navbar {
-    display: none;
+  .navbar ul {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .dept-name {
     font-size: 2rem;
@@ -21,10 +72,23 @@
     font-size: 1rem;
     text-align: center;
   }
+  .about-grid {
+    display: flex;
+    flex-direction: column;
+  }
+  .about .card {
+    padding: 1rem 0;
+    gap: 1rem;
+  }
+  .Contact-flex {
+    flex-direction: column;
+  }
 }
 @media screen and (min-width: 480px) and (max-width: 768px) {
-  .navbar {
-    display: none;
+  .navbar ul {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .dept-name {
     font-size: 3rem;
@@ -40,10 +104,23 @@
     font-size: 1rem;
     text-align: center;
   }
+  .about-grid {
+    display: flex;
+    flex-direction: column;
+  }
+  .about .card {
+    padding: 1rem 0;
+    gap: 1rem;
+  }
+  .Contact-flex {
+    flex-direction: column;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-  .navbar {
-    display: none;
+  .navbar ul {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .dept-name {
     font-size: 4rem;
