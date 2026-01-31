@@ -91,7 +91,18 @@ p {
 }
 @media screen and (min-width: 480px) and (max-width: 768px) {
   h1 {
-    font-size: 4rem;
+    font-size: 3rem;
+  }
+  .student-filters {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .student_details {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  h1 {
+    font-size: 3.5rem;
   }
   .student-filters {
     grid-template-columns: repeat(2, 1fr);
@@ -100,21 +111,13 @@ p {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  h1 {
-    font-size: 4rem;
-  }
-  .student_details {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
 @media screen and (min-width: 1024px) and (max-width: 1200px) {
-  h1 {
-    font-size: 4rem;
-  }
   .student_details {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 @media screen and (min-width: 1201px) {
+  .student_details {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
