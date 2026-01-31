@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@media screen and (max-width: 480px) {
+  .navbar {
+    display: none;
+  }
+  .dept-name {
+    font-size: 2rem;
+    text-align: center;
+    padding: 2rem;
+  }
+  .versity-name {
+    font-size: 1.75rem;
+    text-align: center;
+  }
+  .batch-name {
+    padding: 1rem 0;
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .navbar {
+    display: none;
+  }
+  .dept-name {
+    font-size: 3rem;
+    text-align: center;
+    padding: 2rem;
+  }
+  .versity-name {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .batch-name {
+    padding: 1rem 0;
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .navbar {
+    display: none;
+  }
+  .dept-name {
+    font-size: 4rem;
+    text-align: center;
+    padding: 2rem;
+  }
+  .versity-name {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .batch-name {
+    padding: 1rem 0;
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+  .dept-name {
+    padding: 1.5rem;
+    text-align: center;
+  }
+  .batch-name {
+    padding: 1rem 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .dept-name {
+    padding: 1rem;
+    text-align: center;
+  }
+  .batch-name {
+    padding: 1rem 0;
+  }
+  .navbar {
+    padding: 0.75rem 0;
+  }
+}
