@@ -80,6 +80,10 @@ p {
   h1 {
     font-size: 3rem;
   }
+  .student-search input {
+    width: 90%;
+    min-width: 200px;
+  }
   .student-filters {
     margin: 0.75rem;
     padding: 0.5rem;
@@ -87,6 +91,9 @@ p {
   }
   .student_details {
     grid-template-columns: repeat(1, 1fr);
+  }
+  .filter select {
+    min-width: 100px;
   }
 }
 @media screen and (min-width: 480px) and (max-width: 768px) {
