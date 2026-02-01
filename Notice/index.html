@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles/notice.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Notice</title>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <!-- Notice Section -->
+      <section class="flex flex-col justify-center items-center">
+        <div class="w-[90%] mx-auto shadow notice-section rounded-lg">
+          <!-- heading -->
+          <div class="heading text-center">
+            <h1 class="text-5xl text-blue-400 font-bold">Notice Board</h1>
+            <p class="text-xl">
+              Stay updated with the latest announcements and events at the
+              Department of Computer Science and Engineering.
+            </p>
+          </div>
+          <!-- search and filter -->
+          <div
+            class="search-filter bg-[#ecf0f1] flex justify-between rounded-lg"
+          >
+            <div class="search">
+              <input
+                class="rounded-full"
+                type="text"
+                id="Search"
+                placeholder="Search Notices..."
+              />
+            </div>
+            <div class="filter">
+              <label class="text-bold" for="filterCategory"
+                >Filter by category:</label
+              >
+              <select class="rounded-lg" id="filterCategory">
+                <option value="all">All Category</option>
+                <option value="Academic">Academic</option>
+                <option value="Examination">Examination</option>
+                <option value="Events">Events</option>
+                <option value="Events">Holiday</option>
+              </select>
+            </div>
+          </div>
+          <!-- notice-01 -->
+          <div class="flex shadow gap-3 rounded-lg notice">
+            <div class="date bg-blue-400 flex items-center rounded-l-lg">
+              <p class="text-white text-3xl text-center font-bold">
+                02<br />Feb<br />2026
+              </p>
+            </div>
+            <div class="description">
+              <div class="title">
+                <h1 class="text-blue-400 text-4xl font-bold">
+                  Election holiday notice
+                </h1>
+              </div>
+              <div class="parra">
+                <p class="text-xl">
+                  This is to inform all the public that, in view of the 10th
+                  National Assembly Elections and the upcoming General
+                  Elections, the Government has announced the 6th and 8th
+                  working days of the 11th and 12th February 2026 for all
+                  Government, Semi-Government, Political and Civil Service
+                  Officers/Employees and Government, Civil Service
+                  Teachers/Employees during the period of the Elections and the
+                  Elections.
+                </p>
+              </div>
+              <div class="details flex justify-between">
+                <div class="category-post flex gap-2">
+                  <p class="category bg-blue-400 rounded-full">Holiday</p>
+                  <div class="post flex gap-1 items-center text-gray-500">
+                    <i class="fa-regular fa-user"></i>
+                    <p>Posted by: Academic Office</p>
+                  </div>
+                </div>
+                <div class="read-more text-red-500 font-bold">
+                  <a href=""
+                    >read more <i class="fa-solid fa-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- notice-02 -->
+          <div class="flex shadow gap-3 rounded-lg notice">
+            <div class="date bg-blue-400 flex items-center rounded-l-lg">
+              <p class="text-white text-3xl text-center font-bold">
+                02<br />Feb<br />2026
+              </p>
+            </div>
+            <div class="description">
+              <div class="title">
+                <h1 class="text-blue-400 text-4xl font-bold">
+                  Election holiday notice
+                </h1>
+              </div>
+              <div class="parra">
+                <p class="text-xl">
+                  This is to inform all the public that, in view of the 10th
+                  National Assembly Elections and the upcoming General
+                  Elections, the Government has announced the 6th and 8th
+                  working days of the 11th and 12th February 2026 for all
+                  Government, Semi-Government, Political and Civil Service
+                  Officers/Employees and Government, Civil Service
+                  Teachers/Employees during the period of the Elections and the
+                  Elections.
+                </p>
+              </div>
+              <div class="details flex justify-between">
+                <div class="category-post flex gap-2">
+                  <p class="category bg-blue-400 rounded-full">Holiday</p>
+                  <div class="post flex gap-1 items-center text-gray-500">
+                    <i class="fa-regular fa-user"></i>
+                    <p>Posted by: Academic Office</p>
+                  </div>
+                </div>
+                <div class="read-more text-red-500 font-bold">
+                  <a href=""
+                    >read more <i class="fa-solid fa-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- notice-03 -->
+          <div class="flex shadow gap-3 rounded-lg notice">
+            <div class="date bg-blue-400 flex items-center rounded-l-lg">
+              <p class="text-white text-3xl text-center font-bold">
+                02<br />Feb<br />2026
+              </p>
+            </div>
+            <div class="description">
+              <div class="title">
+                <h1 class="text-blue-400 text-4xl font-bold">
+                  Election holiday notice
+                </h1>
+              </div>
+              <div class="parra">
+                <p class="text-xl">
+                  This is to inform all the public that, in view of the 10th
+                  National Assembly Elections and the upcoming General
+                  Elections, the Government has announced the 6th and 8th
+                  working days of the 11th and 12th February 2026 for all
+                  Government, Semi-Government, Political and Civil Service
+                  Officers/Employees and Government, Civil Service
+                  Teachers/Employees during the period of the Elections and the
+                  Elections.
+                </p>
+              </div>
+              <div class="details flex justify-between">
+                <div class="category-post flex gap-2">
+                  <p class="category bg-blue-400 rounded-full">Holiday</p>
+                  <div class="post flex gap-1 items-center text-gray-500">
+                    <i class="fa-regular fa-user"></i>
+                    <p>Posted by: Academic Office</p>
+                  </div>
+                </div>
+                <div class="read-more text-red-500 font-bold">
+                  <a href=""
+                    >read more <i class="fa-solid fa-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- notice-04 -->
+          <div class="flex shadow gap-3 rounded-lg notice">
+            <div class="date bg-blue-400 flex items-center rounded-l-lg">
+              <p class="text-white text-3xl text-center font-bold">
+                02<br />Feb<br />2026
+              </p>
+            </div>
+            <div class="description">
+              <div class="title">
+                <h1 class="text-blue-400 text-4xl font-bold">
+                  Election holiday notice
+                </h1>
+              </div>
+              <div class="parra">
+                <p class="text-xl">
+                  This is to inform all the public that, in view of the 10th
+                  National Assembly Elections and the upcoming General
+                  Elections, the Government has announced the 6th and 8th
+                  working days of the 11th and 12th February 2026 for all
+                  Government, Semi-Government, Political and Civil Service
+                  Officers/Employees and Government, Civil Service
+                  Teachers/Employees during the period of the Elections and the
+                  Elections.
+                </p>
+              </div>
+              <div class="details flex justify-between">
+                <div class="category-post flex gap-2">
+                  <p class="category bg-blue-400 rounded-full">Holiday</p>
+                  <div class="post flex gap-1 items-center text-gray-500">
+                    <i class="fa-regular fa-user"></i>
+                    <p>Posted by: Academic Office</p>
+                  </div>
+                </div>
+                <div class="read-more text-red-500 font-bold">
+                  <a href=""
+                    >read more <i class="fa-solid fa-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>
