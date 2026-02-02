@@ -5,13 +5,42 @@
 }
 .welcome,
 .about,
-.Contact {
+.Contact,
+.notice-section {
   margin: 2rem auto;
   padding: 2.5rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
 .welcome h1 {
   padding-bottom: 1rem;
+}
+
+.notice {
+  margin-top: 1.5rem;
+}
+.title-desc {
+  margin-top: 1rem;
+}
+.description {
+  padding: 1rem;
+}
+.date {
+  padding: 1.5rem;
+}
+.btn {
+  margin: 1.25rem 0 0;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+.title,
+.parra {
+  margin-bottom: 0.5rem;
+}
+.category {
+  padding: 0.25rem 0.75rem;
+  color: white;
+  font-weight: bold;
 }
 .about-title,
 .Contact-title {
@@ -52,7 +81,11 @@ footer {
   padding: 1rem;
   text-align: center;
 }
+.date-2 {
+  display: none;
+}
 @media screen and (max-width: 480px) {
+  /* header section */
   .navbar ul {
     flex-direction: column;
     justify-content: center;
@@ -72,6 +105,34 @@ footer {
     font-size: 1rem;
     text-align: center;
   }
+  /* notice section */
+  .notice-section {
+    width: 98%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+  }
+  .date {
+    display: none;
+  }
+  .date-2 {
+    display: flex;
+    width: 100%;
+    border-radius: 0;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    justify-content: center;
+    padding: 1rem;
+  }
+  .notice,
+  .details,
+  .category-post {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* about section */
   .about-grid {
     display: flex;
     flex-direction: column;
@@ -85,6 +146,7 @@ footer {
   }
 }
 @media screen and (min-width: 480px) and (max-width: 768px) {
+  /* header section */
   .navbar ul {
     flex-direction: column;
     justify-content: center;
@@ -104,6 +166,14 @@ footer {
     font-size: 1rem;
     text-align: center;
   }
+  /* notice section */
+  .notice-section {
+    width: 98%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+  }
+  /* about section */
   .about-grid {
     display: flex;
     flex-direction: column;
@@ -117,6 +187,7 @@ footer {
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
+  /* header section */
   .navbar ul {
     flex-direction: column;
     justify-content: center;
@@ -138,6 +209,7 @@ footer {
   }
 }
 @media screen and (min-width: 1024px) and (max-width: 1200px) {
+  /* header section */
   .dept-name {
     padding: 1.5rem;
     text-align: center;
@@ -147,6 +219,7 @@ footer {
   }
 }
 @media screen and (min-width: 1200px) {
+  /* header section */
   .dept-name {
     padding: 1rem;
     text-align: center;
