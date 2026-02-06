@@ -1,3 +1,4 @@
+/* share section */
 * {
   margin: 0;
   padding: 0;
@@ -6,16 +7,17 @@
 .welcome,
 .about,
 .Contact,
-.notice-section {
+.notice-section,
+.academic-section {
   margin: 2rem auto;
   padding: 2.5rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-
+/* welcome section */
 .welcome h1 {
   padding-bottom: 1rem;
 }
-
+/* notice section */
 .notice {
   margin-top: 1.5rem;
 }
@@ -42,6 +44,69 @@
   color: white;
   font-weight: bold;
 }
+/* academic section */
+.academic-section h2 {
+  margin-bottom: 0.75rem;
+}
+.search {
+  margin: 1.25rem 0;
+}
+.search input {
+  padding: 0.75rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.year {
+  /* border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem; */
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 0.75rem;
+  background-color: rgb(96, 165, 250);
+  margin-bottom: 1.25rem;
+}
+.year-container {
+  padding: 0.75rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.semester {
+  border-radius: 0.5rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+  padding: 0.75rem;
+  margin-bottom: 0.75rem;
+  background-color: rgb(199, 27, 27);
+}
+.semester-container {
+  padding: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.course {
+  padding: 0.75rem 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.course h3 {
+  color: rgb(96, 165, 250);
+  font-size: 1.75rem;
+  font-weight: bold;
+  margin-bottom: 0.75rem;
+}
+.ctp {
+  padding: 0.065rem 0.5rem;
+  font-size: 1rem;
+}
+.course h4 {
+  color: rgb(199, 27, 27);
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0.75rem 0 0;
+}
+.btn {
+  padding: 0.065rem 0.75rem;
+  font-size: 1.125rem;
+  background-color: rgb(96, 165, 250);
+}
+/* about section */
 .about-title,
 .Contact-title {
   margin-bottom: 1.125rem;
@@ -63,7 +128,7 @@
   padding: 0.5rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-
+/* contact section */
 .Contact-flex .card {
   padding: 1rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -77,6 +142,7 @@
 .location {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+/* footer section */
 footer {
   padding: 1rem;
   text-align: center;
@@ -131,7 +197,12 @@ footer {
     justify-content: center;
     align-items: center;
   }
-
+  /* academic section */
+  .search input {
+    min-width: 350px;
+    min-height: 20px;
+    padding: 0.75rem;
+  }
   /* about section */
   .about-grid {
     display: flex;
