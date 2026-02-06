@@ -64,9 +64,11 @@
   padding: 0.75rem;
   background-color: rgb(96, 165, 250);
   margin-bottom: 1.25rem;
+  cursor: pointer;
 }
 .year-container {
-  padding: 0.75rem;
+  padding: 1rem 0.75rem 0.75rem;
+  margin-bottom: 0.75rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 .semester {
@@ -76,9 +78,11 @@
   padding: 0.75rem;
   margin-bottom: 0.75rem;
   background-color: rgb(199, 27, 27);
+  cursor: pointer;
 }
 .semester-container {
   padding: 0.5rem;
+  margin-bottom: 0.5rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 .course {
@@ -198,10 +202,20 @@ footer {
     align-items: center;
   }
   /* academic section */
-  .search input {
-    min-width: 350px;
-    min-height: 20px;
-    padding: 0.75rem;
+  .academic-section {
+    padding: 0.5rem;
+  }
+  .academic-section h2 {
+    font-size: 1.875rem;
+    margin-bottom: 0.75rem;
+  }
+  .course h3 {
+    font-size: 1.25rem;
+  }
+  .flexCol {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   /* about section */
   .about-grid {
@@ -237,13 +251,18 @@ footer {
     font-size: 1rem;
     text-align: center;
   }
-  /* notice section */
-  .notice-section {
+  /* share section */
+  .welcome,
+  .notice-section,
+  .academic-section,
+  .about,
+  .Contact {
     width: 98%;
     margin-top: 1rem;
     margin-bottom: 1rem;
     padding: 1rem;
   }
+
   /* about section */
   .about-grid {
     display: flex;
